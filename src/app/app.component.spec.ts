@@ -23,13 +23,13 @@ describe('AppComponent', () => {
   it(`should have as title 'Ola-mundo'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Ola-mundo');
+    expect(app.title).toEqual('Olà Mundo');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('Ola-mundo app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Olá Mundo!');
   });
 });
